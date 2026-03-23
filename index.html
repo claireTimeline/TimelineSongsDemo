@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Timeline Demo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      background: #111;
+      color: white;
+    }
+
+    .timeline {
+      display: flex;
+      align-items: center;
+      height: 100vh;
+      padding: 0 100px;
+      gap: 100px;
+    }
+
+    .event {
+      min-width: 250px;
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .event:hover {
+      transform: scale(1.05);
+    }
+
+    .year {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #00d4ff;
+    }
+
+    .line {
+      position: fixed;
+      top: 50%;
+      left: 0;
+      width: 3000px;
+      height: 2px;
+      background: #444;
+      z-index: -1;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="line"></div>
+
+<div class="timeline">
+  <div class="event">
+    <div class="year">2025</div>
+    <p>Example Event</p>
+  </div>
+
+  <div class="event">
+    <div class="year">2030</div>
+    <p>Future Event</p>
+  </div>
+
+  <div class="event">
+    <div class="year">2035</div>
+    <p>Mid Event</p>
+  </div>
+
+  <div class="event">
+    <div class="year">2040</div>
+    <p>Another Event</p>
+  </div>
+</div>
+
+</body>
+</html>
